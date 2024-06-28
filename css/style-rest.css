@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.header {
+    height: 6rem;
+    background-size: cover;
+    background-position: bottom center;
+}
+/**navbar**/
+.bg-light {
+    background-color: white!important;
+}
+.navbar-brand {
+    font-size: 2.4rem;
+    color: black!important;
+}
+.navbar-brand span {
+    font-weight: 900;
+}
+.nav-link {
+    color: black!important;
+    font-size: 1.2rem
+}
+.contenido {
+    color: black!important;
+}
+#glaucoma-text{
+    background-color: black;
+    color: black;
+}
+#macular-text{
+    background-color: black;
+    color: black;
+}
+#catarats-text{
+    background-color: black;
+    color: black;
+}
+#retinopathy-text{
+    background-color: black;
+    color: black;
+}
+#achromatopsia-text{
+    background-color: black;
+    color: black;
+}
+#blindness-text{
+    background-color: black;
+    color: black;
+}
+
+footer{
+    color: white;
+    background: #424242 !important;
+}
+
+//GAME STYLES
+.thegame * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+.thegame {
+    height: 85vh;
+    display: flex;
+    background: #fff;
+  }
+  
+ .thegame .memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+  
+.thegame .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+
+  @media (max-width: 480px) {
+    .thegame .memory-card{
+        height: calc(25% - 10px);
+    }
+    .thegame .front-face,
+    .thegame .back-face {
+        padding: 15px !important;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .thegame .memory-card{
+        height: calc(20% - 10px);
+    }
+    .thegame {
+        height: 80vh;
+    }
+    .thegame .front-face,
+    .thegame .back-face {
+        padding: 10px !important;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .thegame .memory-card{
+        height: calc(15% - 10px);
+    }
+    .thegame {
+        height: 70vh;
+    }
+    .thegame .front-face,
+    .thegame .back-face {
+        padding: 5px !important;
+    }
+  }
+  
+  .thegame .memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .thegame .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .thegame .front-face,
+  .thegame .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #424242;
+    backface-visibility: hidden;
+  }
+  
+  .thegame .front-face {
+    transform: rotateY(180deg);
+  }
+  

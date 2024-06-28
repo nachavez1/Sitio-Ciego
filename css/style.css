@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.header {
+    height: 60rem;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-position: bottom center;
+}
+@media (max-width: 780px) {
+    .header{
+        background-image: url(../img/home-mobile.jpg);
+    }
+  }
+/**navbar**/
+.bg-light {
+    background-color: white!important;
+}
+.navbar-brand {
+    font-size: 2.4rem;
+    color: white!important;
+}
+.navbar-brand span {
+    font-weight: 900;
+}
+.nav-link {
+    color: white!important;
+    font-size: 1.2rem
+}
+.contenido {
+    color: white!important;
+}
+
+footer{
+    color: white;
+    background: #424242 !important;
+}
